@@ -29,11 +29,13 @@ $`f(a)`$ and $`f(b)`$ have **opposite signs**, then $`f`$ has a root in $`(a, b)
 *Proof (bisection / nested intervals).* By replacing $`f`$ with $`f - y`$ (or with
 $`-f`$) we may assume $`f(a) < 0 < f(b)`$ and seek a root. Set $`a_0 = a`$, $`b_0 = b`$
 and repeatedly bisect: with midpoint $`m = \tfrac{a_n + b_n}{2}`$,
+
 $$
 \text{if } f(m) \le 0,\ \text{set } [a_{n+1}, b_{n+1}] = [m,\ b_n];
 \qquad
 \text{if } f(m) > 0,\ \text{set } [a_{n+1}, b_{n+1}] = [a_n,\ m].
 $$
+
 At every stage $`f(a_n) \le 0 \le f(b_n)`$, the intervals are nested and closed,
 and $`b_n - a_n = \dfrac{b-a}{2^n} \to 0`$. By the
 [nested interval theorem](./05-nested-intervals.en.md) they share a single point
@@ -62,10 +64,12 @@ precision.)
 **Problem.** Show that $`\cos x = x`$ has a solution in $`[0, 1]`$.
 
 Let $`f(x) = \cos x - x`$, continuous everywhere. At the endpoints,
+
 $$
 f(0) = \cos 0 - 0 = 1 > 0, \qquad
 f(1) = \cos 1 - 1 \approx 0.540 - 1 = -0.460 < 0.
 $$
+
 Since $`f`$ is continuous on $`[0,1]`$ and changes sign, IVT gives $`c \in (0,1)`$ with
 $`f(c) = 0`$, i.e. $`\cos c = c`$.
 

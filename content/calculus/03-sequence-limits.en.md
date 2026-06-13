@@ -68,17 +68,21 @@ monotonicity, is the subject of the [next lesson](./04-monotone-convergence.en.m
 $`\displaystyle \lim_{n\to\infty} \frac{n+2}{2n+1} = \frac12`$.
 
 We estimate the gap to the candidate limit $`L = \tfrac12`$:
+
 $$
 \left| \frac{n+2}{2n+1} - \frac12 \right|
 = \left| \frac{2(n+2) - (2n+1)}{2(2n+1)} \right|
 = \frac{3}{2(2n+1)} < \frac{3}{4n}.
 $$
+
 Given $`\varepsilon > 0`$, this is $`< \varepsilon`$ as soon as $`\frac{3}{4n} < \varepsilon`$,
 i.e. $`n > \frac{3}{4\varepsilon}`$. So choose any integer $`N > \frac{3}{4\varepsilon}`$.
 Then for all $`n \ge N`$,
+
 $$
 \left| \frac{n+2}{2n+1} - \frac12 \right| < \frac{3}{4n} \le \frac{3}{4N} < \varepsilon.
 $$
+
 By the definition, the limit is $`\tfrac12`$. $`\blacksquare`$
 
 Notice the strategy: bound $`|a_n - L|`$ above by a **simpler** expression

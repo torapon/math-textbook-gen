@@ -22,9 +22,11 @@ together. Both ideas are, once again, powered by completeness.
 ## Limit superior and inferior
 
 For a bounded sequence $`(a_n)`$, define the *tail suprema* and *tail infima*
+
 $$
 s_n = \sup_{k \ge n} a_k, \qquad t_n = \inf_{k \ge n} a_k.
 $$
+
 As $`n`$ grows the tail shrinks, so $`(s_n)`$ is decreasing and $`(t_n)`$ is increasing,
 and both are bounded; by [monotone convergence](./04-monotone-convergence.en.md)
 they converge.
@@ -83,12 +85,14 @@ criterion holds precisely because $`\mathbb{R}`$ has no gaps.
 without computing its value, by verifying it is Cauchy.
 
 For $`m > n`$,
+
 $$
 |a_m - a_n| = \sum_{k=n+1}^{m} \frac{1}{k^2}
 < \sum_{k=n+1}^{m} \frac{1}{k(k-1)}
 = \sum_{k=n+1}^{m}\!\left(\frac{1}{k-1} - \frac{1}{k}\right)
 = \frac1n - \frac1m < \frac1n,
 $$
+
 using the telescoping bound $`\frac{1}{k^2} < \frac{1}{k(k-1)}`$. Given
 $`\varepsilon > 0`$, choose $`N > \tfrac1\varepsilon`$; then for $`m > n \ge N`$,
 $`|a_m - a_n| < \tfrac1n \le \tfrac1N < \varepsilon`$. So $`(a_n)`$ is Cauchy, hence

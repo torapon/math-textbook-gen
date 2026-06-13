@@ -74,9 +74,11 @@ $`\varepsilon`$–$`\delta`$ の定義から直接示しなさい。
 
 $`|x^2 - a^2| = |x - a|\,|x + a|`$ を抑えます。$`|x - a| < 1`$ に制限すると
 $`|x| < |a| + 1`$ なので $`|x + a| \le |x| + |a| < 2|a| + 1`$。ゆえに
+
 $$
 |x^2 - a^2| = |x-a|\,|x+a| < (2|a| + 1)\,|x - a|.
 $$
+
 $`\varepsilon > 0`$ に対し、$`\delta = \min\!\left(1,\ \dfrac{\varepsilon}{2|a| + 1}\right)`$
 をとります。すると $`|x - a| < \delta`$ で
 $`|x^2 - a^2| < (2|a|+1)\cdot \dfrac{\varepsilon}{2|a|+1} = \varepsilon`$。

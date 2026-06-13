@@ -21,9 +21,11 @@ prerequisites: [03-sequence-limits, 04-monotone-convergence]
 ## 上極限・下極限
 
 有界な数列 $`(a_n)`$ に対し、*しっぽの上限・下限* を
+
 $$
 s_n = \sup_{k \ge n} a_k, \qquad t_n = \inf_{k \ge n} a_k
 $$
+
 と定めます。$`n`$ が増えるとしっぽは縮むので、$`(s_n)`$ は減少、$`(t_n)`$ は増加し、ともに
 有界です。[単調収束](./04-monotone-convergence.ja.md)によりこれらは収束します。
 
@@ -81,12 +83,14 @@ $`|a_n - L| \le |a_n - a_m| + |a_m - L| < \varepsilon`$。ゆえに $`a_n \to L`
 コーシー列であることを確かめて収束することを示しなさい。
 
 $`m > n`$ に対し、
+
 $$
 |a_m - a_n| = \sum_{k=n+1}^{m} \frac{1}{k^2}
 < \sum_{k=n+1}^{m} \frac{1}{k(k-1)}
 = \sum_{k=n+1}^{m}\!\left(\frac{1}{k-1} - \frac{1}{k}\right)
 = \frac1n - \frac1m < \frac1n.
 $$
+
 ここで望遠鏡和の評価 $`\frac{1}{k^2} < \frac{1}{k(k-1)}`$ を用いました。
 $`\varepsilon > 0`$ に対し $`N > \tfrac1\varepsilon`$ をとれば、$`m > n \ge N`$ で
 $`|a_m - a_n| < \tfrac1n \le \tfrac1N < \varepsilon`$。よって $`(a_n)`$ はコーシー列で、

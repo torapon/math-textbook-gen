@@ -57,10 +57,12 @@ number*.
 ## Worked example: the cut that defines $`\sqrt{2}`$
 
 **Problem.** Show that
+
 $$
 A = \{\, x \in \mathbb{Q} : x \le 0 \ \text{or}\ x^2 < 2 \,\}, \qquad
 B = \{\, x \in \mathbb{Q} : x > 0 \ \text{and}\ x^2 > 2 \,\}
 $$
+
 is a cut of $`\mathbb{Q}`$ of **Type III**.
 
 First, $`(A,B)`$ really is a cut: every positive rational has $`x^2 < 2`$, $`x^2 = 2`$,
@@ -69,14 +71,18 @@ exactly one of $`A, B`$, and any $`a \in A`$ is smaller than any $`b \in B`$.
 
 Now we show $`A`$ has **no greatest** element. Take any $`a \in A`$ with $`a > 0`$ (so
 $`a^2 < 2`$) and look for a slightly larger rational still in $`A`$. Put
+
 $$
 a' = a + \frac{2 - a^2}{a + 2}\,= \frac{2a+2}{a+2}.
 $$
+
 Then $`a' > a`$, and a short computation gives
+
 $$
 a'^2 - 2 = \frac{(2a+2)^2 - 2(a+2)^2}{(a+2)^2}
         = \frac{2(a^2 - 2)}{(a+2)^2} < 0,
 $$
+
 so $`a'^2 < 2`$, i.e. $`a' \in A`$. Thus every element of $`A`$ is beaten by a larger
 one — $`A`$ has no maximum. A symmetric argument shows $`B`$ has **no least**
 element. Hence the cut is of Type III: it marks the gap we name $`\sqrt{2}`$. $`\blacksquare`$

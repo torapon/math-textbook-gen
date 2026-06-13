@@ -44,9 +44,11 @@ $`\alpha = \sup S`$. We show $`a_n \to \alpha`$.
 Let $`\varepsilon > 0`$. By the characterization of the supremum, $`\alpha -
 \varepsilon`$ is **not** an upper bound, so some term satisfies $`a_N > \alpha -
 \varepsilon`$. Because the sequence is increasing, for every $`n \ge N`$,
+
 $$
 \alpha - \varepsilon < a_N \le a_n \le \alpha < \alpha + \varepsilon,
 $$
+
 hence $`|a_n - \alpha| < \varepsilon`$. That is exactly $`a_n \to \alpha`$. The
 decreasing case follows by applying this to $`(-a_n)`$. ($`\Leftarrow`$ is the
 theorem; $`\Rightarrow`$ holds because every convergent sequence is bounded.) $`\blacksquare`$

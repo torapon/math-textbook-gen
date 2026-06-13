@@ -57,11 +57,13 @@ $`\sup S = 1 \notin S`$. When the supremum *does* belong to $`S`$, it is the max
 
 *Why it is true (sketch).* This is just Dedekind continuity rephrased. Given a
 non-empty $`S`$ bounded above, split $`\mathbb{R}`$ into
+
 $$
 B = \{\, b \in \mathbb{R} : b \text{ is an upper bound of } S \,\},
 \qquad
 A = \mathbb{R} \setminus B.
 $$
+
 Both are non-empty ($`S`$ is bounded above so $`B \neq \varnothing`$; $`S`$ is
 non-empty so some number lies below an element of $`S`$, giving $`A \neq \varnothing`$),
 and every element of $`A`$ is less than every element of $`B`$. So $`(A, B)`$ is a cut

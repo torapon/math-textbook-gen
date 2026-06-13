@@ -70,6 +70,7 @@ explain what the nested interval theorem guarantees.
 
 Start with $`I_1 = [1,2]`$: $`f(1) = -1 < 0`$, $`f(2) = 2 > 0`$. Evaluate at the
 midpoint and keep the half on which $`f`$ changes sign:
+
 $$
 \begin{aligned}
 &f(1.5) = 0.25 > 0 &&\Rightarrow I_2 = [1,\ 1.5]\\
@@ -78,6 +79,7 @@ $$
 &\vdots
 \end{aligned}
 $$
+
 Each step halves the length: $`b_n - a_n = \dfrac{1}{2^{\,n-1}} \to 0`$, and the
 intervals are nested and closed. By the theorem the intersection is a single
 point $`\xi`$, with $`a_n \to \xi`$ and $`b_n \to \xi`$. Since $`f(a_n) \le 0 \le f(b_n)`$
