@@ -27,20 +27,22 @@ creating or editing content.
   GitHub's inline `$...$` runs Markdown's emphasis parser over the contents first, so
   a `_` (subscript) or `*` collides with `_emphasis_`/`*emphasis*` and the math fails
   to render. The backticks protect the contents while GitHub still renders them as math.
-- Display math: `$$ ... $$` with each `$$` on its own line (this form is unaffected by
-  the emphasis problem — no backticks needed).
-- Use standard LaTeX. Prefer `\frac`, `\sqrt`, `\cdot`, `\times`, `\le`, `\ge`, `\neq`.
-- Align multi-step derivations with `aligned`:
-  ```
-  $$
+- Display math: use a fenced ` ```math ` block, **not** `$$ ... $$`. GitHub
+  Markdown-escapes the contents of a `$$` block (turning `\{`→`{`, `\,`→`,`, etc.)
+  before the math is rendered, which silently breaks set braces, spacing, and the
+  like. A ` ```math ` fence is left verbatim and renders reliably. For example:
+  ~~~
+  ```math
   \begin{aligned}
   x &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \\
     &= \dots
   \end{aligned}
-  $$
   ```
-- Do **not** use `\(`, `\)`, `\[`, `\]` — stick to the `$`/`$$` family. (For Pandoc
-  export, strip the inline backticks first; see the README.)
+  ~~~
+- Use standard LaTeX. Prefer `\frac`, `\sqrt`, `\cdot`, `\times`, `\le`, `\ge`, `\neq`.
+- Align multi-step derivations with `aligned` inside the ` ```math ` fence (see above).
+- Do **not** use `\(`, `\)`, `\[`, `\]`. Inline is `` $`...`$ ``; display is ` ```math `.
+  (For Pandoc export, normalize both back to `$...$`/`$$...$$` first; see the README.)
 - Do **not** backslash-escape punctuation inside math (`\*`, `\%`, etc.). Markdown
   escaping does not apply in math mode; `\*` is an undefined KaTeX control sequence
   and breaks rendering on GitHub. For a literal star use `^{*}` / `{*}`.

@@ -9,28 +9,36 @@ Bilingual (English / 日本語) math documentation at the **high-school to early
 Content is written in **Markdown with LaTeX math**:
 
 - Inline math: `` $`...`$ `` → $`a^2 + b^2 = c^2`$
-- Display math: `$$ ... $$` (each `$$` on its own line)
+- Display math: a fenced ` ```math ` block
 
-The backticks around inline math are required for **GitHub** rendering: GitHub runs
-its Markdown emphasis parser over a bare `$...$`, so subscripts (`_`) and stars (`*`)
-inside the math break it. Wrapping as `` $`...`$ `` shields the contents while GitHub
-still renders them as math. Display `$$...$$` needs no backticks.
+Both forms are chosen for reliable **GitHub** rendering:
+
+- GitHub runs its Markdown parser over the *contents* of bare `$...$` / `$$...$$`,
+  which corrupts the LaTeX — subscripts (`_`) and stars (`*`) collide with emphasis
+  inline, and `\{`, `\,`, etc. get escaped in display blocks. Shielding inline math
+  with backticks (`` $`...`$ ``) and writing display math as a ` ```math ` fence keeps
+  the LaTeX verbatim so GitHub renders it correctly.
 
 ### Export to PDF / HTML via [Pandoc](https://pandoc.org/)
 
-Pandoc reads bare `$...$` as math but treats the backtick form as inline code, so
-strip the inline backticks first:
+Pandoc wants plain `$...$` / `$$...$$`, so normalize the GitHub-specific forms first
+(strip inline backticks; turn ` ```math ` fences into `$$`):
 
 ```sh
-# Inline `$`...`$`  ->  $...$ , then render
-strip() { sed -E 's/\$`/$/g; s/`\$/$/g' "$1"; }
+# GitHub forms  ->  plain $...$ / $$...$$
+normalize() {
+  sed -E 's/\$`/$/g; s/`\$/$/g; s/^```math$/$$/; s/^```$/$$/' "$1"
+}
 
 # Single lesson → PDF
-strip content/calculus/01-dedekind-cuts.en.md | pandoc -o dedekind-cuts.pdf
+normalize content/calculus/01-dedekind-cuts.en.md | pandoc -o dedekind-cuts.pdf
 
 # → standalone HTML with MathJax
-strip content/calculus/01-dedekind-cuts.en.md | pandoc -s --mathjax -o dedekind-cuts.html
+normalize content/calculus/01-dedekind-cuts.en.md | pandoc -s --mathjax -o dedekind-cuts.html
 ```
+
+(The second `s/^```$/$$/` closes the fence; it assumes lessons use ` ``` ` fences
+only for math, which is the convention here.)
 
 ## Structure / 構成
 
