@@ -8,17 +8,28 @@ Bilingual (English / 日本語) math documentation at the **high-school to early
 
 Content is written in **Markdown with LaTeX math**:
 
-- Inline math: `$ ... $` → $a^2 + b^2 = c^2$
-- Display math: `$$ ... $$`
+- Inline math: `` $`...`$ `` → $`a^2 + b^2 = c^2`$
+- Display math: `$$ ... $$` (each `$$` on its own line)
 
-This renders directly on GitHub and in VS Code, and converts cleanly to **PDF / HTML** via [Pandoc](https://pandoc.org/):
+The backticks around inline math are required for **GitHub** rendering: GitHub runs
+its Markdown emphasis parser over a bare `$...$`, so subscripts (`_`) and stars (`*`)
+inside the math break it. Wrapping as `` $`...`$ `` shields the contents while GitHub
+still renders them as math. Display `$$...$$` needs no backticks.
+
+### Export to PDF / HTML via [Pandoc](https://pandoc.org/)
+
+Pandoc reads bare `$...$` as math but treats the backtick form as inline code, so
+strip the inline backticks first:
 
 ```sh
+# Inline `$`...`$`  ->  $...$ , then render
+strip() { sed -E 's/\$`/$/g; s/`\$/$/g' "$1"; }
+
 # Single lesson → PDF
-pandoc content/algebra/quadratic-equations.en.md -o quadratic-equations.pdf
+strip content/calculus/01-dedekind-cuts.en.md | pandoc -o dedekind-cuts.pdf
 
 # → standalone HTML with MathJax
-pandoc content/algebra/quadratic-equations.en.md -s --mathjax -o quadratic-equations.html
+strip content/calculus/01-dedekind-cuts.en.md | pandoc -s --mathjax -o dedekind-cuts.html
 ```
 
 ## Structure / 構成

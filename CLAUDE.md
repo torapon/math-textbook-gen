@@ -23,7 +23,12 @@ creating or editing content.
 
 ## Math formatting
 
-- Inline math: `$ ... $`. Display math: `$$ ... $$` on its own lines.
+- Inline math: wrap in backtick-shielded dollars — `` $`...`$ `` (e.g. `` $`a_n \to L`$ ``).
+  GitHub's inline `$...$` runs Markdown's emphasis parser over the contents first, so
+  a `_` (subscript) or `*` collides with `_emphasis_`/`*emphasis*` and the math fails
+  to render. The backticks protect the contents while GitHub still renders them as math.
+- Display math: `$$ ... $$` with each `$$` on its own line (this form is unaffected by
+  the emphasis problem — no backticks needed).
 - Use standard LaTeX. Prefer `\frac`, `\sqrt`, `\cdot`, `\times`, `\le`, `\ge`, `\neq`.
 - Align multi-step derivations with `aligned`:
   ```
@@ -34,7 +39,8 @@ creating or editing content.
   \end{aligned}
   $$
   ```
-- Do **not** use `\(`, `\)`, `\[`, `\]` — stick to `$`/`$$` for portability (GitHub + Pandoc).
+- Do **not** use `\(`, `\)`, `\[`, `\]` — stick to the `$`/`$$` family. (For Pandoc
+  export, strip the inline backticks first; see the README.)
 - Do **not** backslash-escape punctuation inside math (`\*`, `\%`, etc.). Markdown
   escaping does not apply in math mode; `\*` is an undefined KaTeX control sequence
   and breaks rendering on GitHub. For a literal star use `^{*}` / `{*}`.

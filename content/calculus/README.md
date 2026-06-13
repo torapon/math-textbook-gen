@@ -22,7 +22,7 @@ of the real numbers to open and closed sets. Each lesson has an English
 
 ## The thread / 全体の流れ
 
-The series has one recurring theme: the **completeness of $\mathbb{R}$**. It is
+The series has one recurring theme: the **completeness of $`\mathbb{R}`$**. It is
 introduced as Dedekind continuity (01), reappears as the least-upper-bound
 property (02), and then powers every existence theorem that follows — monotone
 convergence (04), nested intervals (05), the Cauchy criterion (06),
