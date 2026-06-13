@@ -30,11 +30,11 @@ s_n = \sup_{k \ge n} a_k, \qquad t_n = \inf_{k \ge n} a_k
 有界です。[単調収束](./04-monotone-convergence.ja.md)によりこれらは収束します。
 
 > **定義（上極限・下極限）.**
-> $$
+> ```math
 > \limsup_{n\to\infty} a_n = \lim_{n\to\infty} s_n = \inf_{n} \sup_{k\ge n} a_k,
 > \qquad
 > \liminf_{n\to\infty} a_n = \lim_{n\to\infty} t_n = \sup_{n} \inf_{k\ge n} a_k.
-> $$
+> ```
 
 これらは有界数列に対して **常に存在** します（非有界なら $`\pm\infty`$ を許す）。常に
 $`\liminf a_n \le \limsup a_n`$ であり、これらは通常の収束を特徴づけます。
@@ -48,10 +48,10 @@ $`\liminf a_n \le \limsup a_n`$ であり、これらは通常の収束を特徴
 ## コーシーの判定法
 
 > **定義（コーシー列）.** $`(a_n)`$ が *コーシー列* であるとは、
-> $$
+> ```math
 > \text{任意の } \varepsilon > 0 \text{ に対し、ある } N \text{ が存在して }
 > m, n \ge N \implies |a_m - a_n| < \varepsilon
-> $$
+> ```
 > が成り立つことをいいます。
 
 項が最終的に **互いに** $`\varepsilon`$ 以内に収まる、という条件で、極限の値には触れて

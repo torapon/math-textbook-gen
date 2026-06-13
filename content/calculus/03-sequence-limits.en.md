@@ -25,10 +25,10 @@ how long? The $`\varepsilon`$–$`N`$ definition makes it precise.
 
 > **Definition (limit / convergence).** A sequence $`(a_n)`$ *converges* to a real
 > number $`L`$ if:
-> $$
+> ```math
 > \text{for every } \varepsilon > 0 \text{ there exists } N \in \mathbb{N}
 > \text{ such that } \; n \ge N \implies |a_n - L| < \varepsilon.
-> $$
+> ```
 > We then write $`\displaystyle \lim_{n\to\infty} a_n = L`$, or $`a_n \to L`$, and
 > call $`L`$ the *limit*. If no such $`L`$ exists, $`(a_n)`$ *diverges*.
 

@@ -25,9 +25,9 @@ Let $`S \subseteq \mathbb{R}`$.
 > **Definition (accumulation point).** A point $`x \in \mathbb{R}`$ is an
 > *accumulation point* (or *limit point*) of $`S`$ if every neighborhood of $`x`$
 > contains a point of $`S`$ **other than $`x`$ itself**: for every $`\varepsilon > 0`$,
-> $$
+> ```math
 > \big( (x - \varepsilon,\ x + \varepsilon) \setminus \{x\} \big) \cap S \neq \varnothing.
-> $$
+> ```
 
 Equivalently, there is a sequence of points of $`S`$, all different from $`x`$,
 converging to $`x`$. Intuitively $`S`$ "accumulates" arbitrarily close to $`x`$.

@@ -25,10 +25,10 @@ and connects them to the sequence limits we already understand.
 > **Definition (limit of a function).** Let $`a`$ be an
 > [accumulation point](./07-accumulation-points.en.md) of $`D`$. We say
 > $`\displaystyle \lim_{x \to a} f(x) = L`$ if:
-> $$
+> ```math
 > \text{for every } \varepsilon > 0 \text{ there is } \delta > 0 \text{ such that }
 > 0 < |x - a| < \delta,\ x \in D \implies |f(x) - L| < \varepsilon.
-> $$
+> ```
 
 We require $`a`$ to be an accumulation point of $`D`$ so that there are points of $`D`$
 arbitrarily near $`a`$ to take the limit through; note $`x = a`$ itself is *excluded*
@@ -36,10 +36,10 @@ arbitrarily near $`a`$ to take the limit through; note $`x = a`$ itself is *excl
 limit.
 
 > **Definition (continuity at a point).** $`f`$ is *continuous at* $`a \in D`$ if
-> $$
+> ```math
 > \text{for every } \varepsilon > 0 \text{ there is } \delta > 0 \text{ such that }
 > |x - a| < \delta,\ x \in D \implies |f(x) - f(a)| < \varepsilon.
-> $$
+> ```
 > $`f`$ is *continuous* (on $`D`$) if it is continuous at every point of $`D`$.
 
 When $`a`$ is an accumulation point of $`D`$, continuity at $`a`$ says exactly
@@ -61,9 +61,9 @@ limits respect arithmetic:
 
 > **Theorem (algebra of limits).** If $`\lim_{x\to a} f = L`$ and
 > $`\lim_{x\to a} g = M`$, then as $`x \to a`$,
-> $$
+> ```math
 > f \pm g \to L \pm M, \qquad fg \to LM, \qquad \frac{f}{g} \to \frac{L}{M}\ (M \neq 0).
-> $$
+> ```
 > Hence sums, products, quotients, and compositions of continuous functions are
 > continuous (where defined). Polynomials are continuous everywhere; rational
 > functions wherever the denominator is nonzero.

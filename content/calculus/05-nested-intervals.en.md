@@ -21,10 +21,10 @@ It is yet another face of completeness, and the most geometric one.
 
 > **Definition (nested intervals).** A sequence of closed intervals
 > $`I_n = [a_n, b_n]`$ is *nested* if
-> $$
+> ```math
 > I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots,
 > \quad\text{i.e.}\quad a_n \le a_{n+1} \le b_{n+1} \le b_n \ \text{ for all } n.
-> $$
+> ```
 
 Each interval sits inside the previous one. We say the lengths *shrink to zero*
 if $`b_n - a_n \to 0`$.
@@ -33,9 +33,9 @@ if $`b_n - a_n \to 0`$.
 
 > **Theorem (Nested Intervals).** Let $`I_n = [a_n, b_n]`$ be nested **closed**
 > intervals. Then their intersection is non-empty:
-> $$
+> ```math
 > \bigcap_{n=1}^{\infty} I_n \neq \varnothing.
-> $$
+> ```
 > If moreover $`b_n - a_n \to 0`$, the intersection is a **single point**: there is
 > a unique $`\xi`$ with $`\{\xi\} = \bigcap_n I_n`$, and $`a_n \to \xi`$, $`b_n \to \xi`$.
 

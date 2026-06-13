@@ -32,11 +32,11 @@ and both are bounded; by [monotone convergence](./04-monotone-convergence.en.md)
 they converge.
 
 > **Definition (limsup / liminf).**
-> $$
+> ```math
 > \limsup_{n\to\infty} a_n = \lim_{n\to\infty} s_n = \inf_{n} \sup_{k\ge n} a_k,
 > \qquad
 > \liminf_{n\to\infty} a_n = \lim_{n\to\infty} t_n = \sup_{n} \inf_{k\ge n} a_k.
-> $$
+> ```
 
 These **always exist** for a bounded sequence (allow $`\pm\infty`$ for unbounded
 ones). Always $`\liminf a_n \le \limsup a_n`$, and they pin down ordinary
@@ -51,10 +51,10 @@ measures the sequence's persistent oscillation.
 ## The Cauchy criterion
 
 > **Definition (Cauchy sequence).** $`(a_n)`$ is a *Cauchy sequence* if
-> $$
+> ```math
 > \text{for every } \varepsilon > 0 \text{ there is } N \text{ such that }
 > m, n \ge N \implies |a_m - a_n| < \varepsilon.
-> $$
+> ```
 
 The terms eventually lie within $`\varepsilon`$ of **one another** — no limit value
 is mentioned.

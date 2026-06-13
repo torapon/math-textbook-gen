@@ -21,10 +21,10 @@ prerequisites: [02-supremum-infimum, 04-monotone-convergence]
 
 > **定義（区間縮小列）.** 閉区間の列 $`I_n = [a_n, b_n]`$ が *縮小列（入れ子）* で
 > あるとは、
-> $$
+> ```math
 > I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots,
 > \quad\text{すなわち}\quad a_n \le a_{n+1} \le b_{n+1} \le b_n \ \text{ (すべての } n)
-> $$
+> ```
 > が成り立つことをいいます。
 
 各区間は1つ前の区間の内側にあります。長さが *$`0`$ に縮む* とは $`b_n - a_n \to 0`$ の
@@ -34,9 +34,9 @@ prerequisites: [02-supremum-infimum, 04-monotone-convergence]
 
 > **定理（区間縮小法）.** $`I_n = [a_n, b_n]`$ を入れ子の **閉** 区間とする。このとき
 > 共通部分は空でない：
-> $$
+> ```math
 > \bigcap_{n=1}^{\infty} I_n \neq \varnothing.
-> $$
+> ```
 > さらに $`b_n - a_n \to 0`$ ならば、共通部分は **ただ1点** である：
 > $`\{\xi\} = \bigcap_n I_n`$ となる $`\xi`$ がただ1つ存在し、$`a_n \to \xi`$,
 > $`b_n \to \xi`$ となる。

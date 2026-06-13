@@ -23,20 +23,20 @@ prerequisites: [03-sequence-limits, 07-accumulation-points]
 
 > **定義（関数の極限）.** $`a`$ を $`D`$ の[集積点](./07-accumulation-points.ja.md)とする。
 > $`\displaystyle \lim_{x \to a} f(x) = L`$ であるとは、次が成り立つことをいう。
-> $$
+> ```math
 > \text{任意の } \varepsilon > 0 \text{ に対し、ある } \delta > 0 \text{ が存在して }
 > 0 < |x - a| < \delta,\ x \in D \implies |f(x) - L| < \varepsilon.
-> $$
+> ```
 
 $`a`$ を $`D`$ の集積点とするのは、$`a`$ にいくらでも近い $`D`$ の点を通って極限をとれる
 ようにするためです。$`x = a`$ 自身は除外され（$`0 < |x-a|`$）、値 $`f(a)`$ は — たとえ存在
 しても — 極限には無関係です。
 
 > **定義（点における連続性）.** $`f`$ が $`a \in D`$ で *連続* であるとは、
-> $$
+> ```math
 > \text{任意の } \varepsilon > 0 \text{ に対し、ある } \delta > 0 \text{ が存在して }
 > |x - a| < \delta,\ x \in D \implies |f(x) - f(a)| < \varepsilon
-> $$
+> ```
 > が成り立つことをいう。$`f`$ が（$`D`$ 上で）*連続* とは、$`D`$ の各点で連続なことをいう。
 
 $`a`$ が $`D`$ の集積点のとき、$`a`$ での連続性はちょうど
@@ -58,9 +58,9 @@ $`\displaystyle \lim_{x\to a} f(x) = f(a)`$ を意味します。極限が存在
 
 > **定理（極限の演算）.** $`\lim_{x\to a} f = L`$, $`\lim_{x\to a} g = M`$ ならば、
 > $`x \to a`$ のとき、
-> $$
+> ```math
 > f \pm g \to L \pm M, \qquad fg \to LM, \qquad \frac{f}{g} \to \frac{L}{M}\ (M \neq 0).
-> $$
+> ```
 > ゆえに連続関数の和・積・商・合成は（定義される範囲で）連続である。多項式は至る所で
 > 連続、有理関数は分母が $`0`$ でないところで連続である。
 

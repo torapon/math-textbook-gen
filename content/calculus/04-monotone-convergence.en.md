@@ -29,12 +29,12 @@ out of thin air — using only the completeness of $`\mathbb{R}`$.
 
 > **Theorem (Monotone Convergence).** A monotone sequence converges **if and only
 > if** it is bounded. More precisely:
-> $$
+> ```math
 > (a_n) \text{ increasing and bounded above} \implies \lim_{n\to\infty} a_n = \sup_n a_n,
-> $$
-> $$
+> ```
+> ```math
 > (a_n) \text{ decreasing and bounded below} \implies \lim_{n\to\infty} a_n = \inf_n a_n.
-> $$
+> ```
 
 *Proof (increasing case).* Suppose $`(a_n)`$ is increasing and bounded above. The
 set $`S = \{a_n : n \ge 1\}`$ is non-empty and bounded above, so by the
