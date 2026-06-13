@@ -35,6 +35,9 @@ creating or editing content.
   $$
   ```
 - Do **not** use `\(`, `\)`, `\[`, `\]` — stick to `$`/`$$` for portability (GitHub + Pandoc).
+- Do **not** backslash-escape punctuation inside math (`\*`, `\%`, etc.). Markdown
+  escaping does not apply in math mode; `\*` is an undefined KaTeX control sequence
+  and breaks rendering on GitHub. For a literal star use `^{*}` / `{*}`.
 - Number equations only when later referenced; otherwise leave them unnumbered.
 
 ## Lesson structure
