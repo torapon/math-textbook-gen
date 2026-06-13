@@ -37,6 +37,14 @@ everything to the right into $`B`$.
 
 ## The three types of a cut
 
+First, two terms we will lean on. The *greatest element* of a set is a member
+that belongs to the set **and** is $`\ge`$ every other member; the *least element*
+is a member that belongs to the set and is $`\le`$ every other member. A finite set
+always has both, but an infinite set need **not**: for example
+$`\{x \in \mathbb{Q} : x < 1\}`$ has no greatest element — whatever member you pick,
+another member sits between it and $`1`$. This "may or may not exist" is exactly
+what distinguishes the types below.
+
 Because $`\mathbb{Q}`$ is **densely ordered** (between any two rationals lies a
 third), one logical possibility is ruled out immediately: $`A`$ cannot have a
 greatest element $`a^{*}`$ *and* $`B`$ a least element $`b^{*}`$ at the same time —
