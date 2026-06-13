@@ -1,0 +1,7 @@
+# Pandoc / build outputs
+*.pdf
+*.html
+*.tex
+*.aux
+*.log
+.DS_Store
