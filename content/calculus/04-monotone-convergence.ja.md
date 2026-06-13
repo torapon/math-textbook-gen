@@ -41,9 +41,9 @@ $`\varepsilon > 0`$ とします。上限の特徴づけにより $`\alpha - \va
 **ない** ので、ある項が $`a_N > \alpha - \varepsilon`$ を満たします。数列は増加なので、
 $`n \ge N`$ なるすべての $`n`$ で、
 
-$$
+```math
 \alpha - \varepsilon < a_N \le a_n \le \alpha < \alpha + \varepsilon
-$$
+```
 
 となり、$`|a_n - \alpha| < \varepsilon`$ です。これがまさに $`a_n \to \alpha`$ です。減少の
 場合は $`(-a_n)`$ に適用すれば従います。（$`\Leftarrow`$ がこの定理で、$`\Rightarrow`$ は

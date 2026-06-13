@@ -28,11 +28,11 @@ prerequisites: [05-nested-intervals, 08-functions-and-continuity]
 $`f(a) < 0 < f(b)`$ とし根を探すとしてよい。$`a_0 = a`$, $`b_0 = b`$ とし、中点
 $`m = \tfrac{a_n + b_n}{2}`$ で繰り返し二分します。
 
-$$
+```math
 f(m) \le 0 \text{ なら } [a_{n+1}, b_{n+1}] = [m,\ b_n];
 \qquad
 f(m) > 0 \text{ なら } [a_{n+1}, b_{n+1}] = [a_n,\ m].
-$$
+```
 
 各段階で $`f(a_n) \le 0 \le f(b_n)`$ であり、区間は入れ子かつ閉で、
 $`b_n - a_n = \dfrac{b-a}{2^n} \to 0`$。[区間縮小法](./05-nested-intervals.ja.md)により
@@ -60,10 +60,10 @@ IVT が与えるのは *存在* であり、一意性や公式ではありませ
 
 $`f(x) = \cos x - x`$ とおくと至る所連続です。端点で、
 
-$$
+```math
 f(0) = \cos 0 - 0 = 1 > 0, \qquad
 f(1) = \cos 1 - 1 \approx 0.540 - 1 = -0.460 < 0.
-$$
+```
 
 $`f`$ は $`[0,1]`$ で連続で符号を変えるので、IVT により $`f(c) = 0`$ となる
 $`c \in (0,1)`$、すなわち $`\cos c = c`$ が存在します。

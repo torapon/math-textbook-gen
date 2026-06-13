@@ -80,9 +80,9 @@ directly from the $`\varepsilon`$–$`\delta`$ definition.
 We must bound $`|x^2 - a^2| = |x - a|\,|x + a|`$. Restrict attention to
 $`|x - a| < 1`$; then $`|x| < |a| + 1`$, so $`|x + a| \le |x| + |a| < 2|a| + 1`$. Hence
 
-$$
+```math
 |x^2 - a^2| = |x-a|\,|x+a| < (2|a| + 1)\,|x - a|.
-$$
+```
 
 Given $`\varepsilon > 0`$, choose
 $`\delta = \min\!\left(1,\ \dfrac{\varepsilon}{2|a| + 1}\right)`$. Then

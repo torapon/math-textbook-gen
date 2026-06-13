@@ -71,14 +71,14 @@ explain what the nested interval theorem guarantees.
 Start with $`I_1 = [1,2]`$: $`f(1) = -1 < 0`$, $`f(2) = 2 > 0`$. Evaluate at the
 midpoint and keep the half on which $`f`$ changes sign:
 
-$$
+```math
 \begin{aligned}
 &f(1.5) = 0.25 > 0 &&\Rightarrow I_2 = [1,\ 1.5]\\
 &f(1.25) = -0.4375 < 0 &&\Rightarrow I_3 = [1.25,\ 1.5]\\
 &f(1.375) = -0.109\ldots < 0 &&\Rightarrow I_4 = [1.375,\ 1.5]\\
 &\vdots
 \end{aligned}
-$$
+```
 
 Each step halves the length: $`b_n - a_n = \dfrac{1}{2^{\,n-1}} \to 0`$, and the
 intervals are nested and closed. By the theorem the intersection is a single

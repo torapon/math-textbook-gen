@@ -20,9 +20,9 @@ prerequisites: [<topic-slug>, ...]
 
 ## Key result
 
-$$
+```math
 <central equation or theorem>
-$$
+```
 
 <Brief explanation or, if appropriate, a sketch of why it is true.>
 
@@ -30,12 +30,12 @@ $$
 
 **Problem.** <statement>
 
-$$
+```math
 \begin{aligned}
 <step 1> &= <...> \\
          &= <...>
 \end{aligned}
-$$
+```
 
 **Answer.** <result>
 
