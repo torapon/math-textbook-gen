@@ -71,10 +71,33 @@ of $`\mathbb{R}`$. By Dedekind's theorem the cut is realized by a single real
 number $`\alpha`$, and one checks that $`\alpha`$ is exactly the least upper bound of
 $`S`$. The infimum statement follows by applying this to $`-S = \{-x : x \in S\}`$. $`\blacksquare`$
 
-The completeness theorem and Dedekind continuity are **logically equivalent**;
-either can be taken as *the* axiom that distinguishes $`\mathbb{R}`$ from
-$`\mathbb{Q}`$. (Over $`\mathbb{Q}`$ the theorem fails: $`\{x \in \mathbb{Q} : x^2 < 2\}`$
-is bounded above but has no rational supremum.)
+## Two standpoints: axiom or theorem?
+
+Completeness has now appeared twice: the
+[Dedekind-cuts lesson](./01-dedekind-cuts.en.md) phrased it as "no cut of
+$`\mathbb{R}`$ is of Type III," and the section above as the equivalent "every
+bounded-above set has a supremum." So is completeness something we **prove**, or
+something we **assume**? The answer depends on how you obtain $`\mathbb{R}`$.
+
+- **The constructive standpoint.** If you **construct** the reals as cuts of
+  $`\mathbb{Q}`$, completeness is a **theorem**. As the Dedekind lesson proved, the
+  boundary number of a cut of $`\mathbb{R}`$ is built directly as a union of lower
+  classes of rationals, and that forces the absence of Type III cuts; the
+  existence of suprema then follows. Along this route everything is a theorem
+  built on top of $`\mathbb{Q}`$ (and, further down, set theory), with no circularity.
+- **The axiomatic standpoint.** Alternatively, one may simply **define**
+  $`\mathbb{R}`$ to be "a complete ordered field." Then completeness (the existence
+  of suprema) is an **axiom** — assumed, not proved. Since "no Type III cut" and
+  "every bounded-above set has a supremum" are logically equivalent, either may be
+  taken as the axiom, and the same $`\mathbb{R}`$ results (the ordered field
+  satisfying it is unique up to isomorphism).
+
+Either way, completeness is never proved **from nothing**: the constructive route
+assumes $`\mathbb{Q}`$ and set theory, the axiomatic route assumes completeness
+itself. Mathematics always rests on some foundation, and completeness is no
+exception. What matters is the single fact that the property **fails** over
+$`\mathbb{Q}`$ ($`\{x \in \mathbb{Q} : x^2 < 2\}`$ is bounded above but has no rational
+supremum) — and that is exactly what characterizes $`\mathbb{R}`$.
 
 ## Worked example
 

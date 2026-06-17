@@ -112,6 +112,63 @@ cut. This single statement — that there are no Type III cuts — is what we me
 the **continuity of the real numbers**, and it is the foundation on which every
 limit theorem in analysis ultimately rests.
 
+## Proof of Dedekind's Theorem
+
+From the standpoint that **constructs** the reals as cuts of $`\mathbb{Q}`$, this
+theorem can be proved straight from the definition. The key idea is to **build the
+number at the gap directly out of rationals**.
+
+Fix one way to represent a real number. For each real $`\alpha`$, let
+
+```math
+\ell(\alpha) = \{\, q \in \mathbb{Q} : q < \alpha \,\}
+```
+
+be the set of all rationals below it — its *lower class*. In Dedekind's
+construction we identify the real number $`\alpha`$ with this very set. Each
+$`\ell(\alpha)`$ is non-empty, is not all of $`\mathbb{Q}`$, is downward closed (if
+$`q \in \ell(\alpha)`$ and $`q' < q`$ then $`q' \in \ell(\alpha)`$), and has no greatest
+element. Moreover, for a rational $`q`$ we have $`q \in \ell(\alpha) \iff q < \alpha`$,
+and $`\alpha \le \beta \iff \ell(\alpha) \subseteq \ell(\beta)`$.
+
+Now take any cut $`(A, B)`$ of $`\mathbb{R}`$ (here $`A, B`$ are sets of **real**
+numbers). Form the set of rationals
+
+```math
+U = \bigcup_{\alpha \in A} \ell(\alpha),
+```
+
+the overlay of the lower classes of all the reals in $`A`$.
+
+**$`U`$ defines a single real number.** We check that $`U`$ is a lower class with
+the four properties above. Since $`A \neq \varnothing`$ and each
+$`\ell(\alpha) \neq \varnothing`$, we get $`U \neq \varnothing`$. Pick $`\beta \in B`$; for
+every $`\alpha \in A`$ we have $`\alpha < \beta`$, so $`\ell(\alpha) \subseteq \ell(\beta)`$,
+giving $`U \subseteq \ell(\beta) \neq \mathbb{Q}`$; hence $`U \neq \mathbb{Q}`$. Downward
+closure and the absence of a greatest element pass from each $`\ell(\alpha)`$ to the
+union directly. So $`U = \ell(\gamma)`$ for a unique real $`\gamma`$. Note that **this
+$`\gamma`$ — the number the cut points to — was built as a union of rationals,
+without assuming completeness.**
+
+**$`\gamma`$ is the boundary.** For each $`\alpha \in A`$, $`\ell(\alpha) \subseteq U = \ell(\gamma)`$,
+so $`\alpha \le \gamma`$. For each $`\beta \in B`$, $`U \subseteq \ell(\beta)`$, i.e.
+$`\ell(\gamma) \subseteq \ell(\beta)`$, so $`\gamma \le \beta`$.
+
+**Conclusion.** Since $`A \cup B = \mathbb{R}`$, the real number $`\gamma`$ lies in
+exactly one of $`A, B`$.
+
+- If $`\gamma \in A`$: every $`\alpha \in A`$ has $`\alpha \le \gamma`$ and $`\gamma \in A`$,
+  so $`\gamma = \max A`$ (Type I).
+- If $`\gamma \in B`$: every $`\beta \in B`$ has $`\gamma \le \beta`$ and $`\gamma \in B`$,
+  so $`\gamma = \min B`$ (Type II).
+
+Either way a boundary element exists, so Type III cannot occur. $`\blacksquare`$
+
+A Type III cut arose for $`\mathbb{Q}`$ (the $`\sqrt{2}`$ example) precisely because the
+boundary $`\gamma`$ fell *outside* $`\mathbb{Q}`$, so neither class could catch it. Over
+$`\mathbb{R}`$ the number $`\gamma`$ can always be constructed as a set of rationals, so
+this never happens.
+
 ## Common mistakes
 
 - **Requiring $`A`$ to have a maximum.** A cut need not have a boundary element in
