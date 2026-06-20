@@ -1,11 +1,11 @@
 # Foundations of Analysis / 解析学の基礎
 
 A linked series building the foundations of real analysis, from the construction
-of the real numbers to open and closed sets. Each lesson has an English
-(`.en.md`) and Japanese (`.ja.md`) version.
+of the real numbers through continuity to differential calculus and Taylor's
+formula. Each lesson has an English (`.en.md`) and Japanese (`.ja.md`) version.
 
-実数の構成から開集合・閉集合まで、実解析の基礎を積み上げる連続シリーズです。各レッスンに
-英語版 (`.en.md`) と日本語版 (`.ja.md`) があります。
+実数の構成から、連続性を経て、微分法とテイラーの公式まで、実解析の基礎を積み上げる連続
+シリーズです。各レッスンに英語版 (`.en.md`) と日本語版 (`.ja.md`) があります。
 
 | # | English | 日本語 |
 |---|---------|--------|
@@ -27,6 +27,8 @@ of the real numbers to open and closed sets. Each lesson has an English
 | 16 | [The Chain Rule](./16-chain-rule.en.md) | [合成関数の微分（連鎖律）](./16-chain-rule.ja.md) |
 | 17 | [The Derivative of an Inverse Function](./17-inverse-function-derivative.en.md) | [逆関数の微分](./17-inverse-function-derivative.ja.md) |
 | 18 | [Rolle's Theorem and the Mean Value Theorem](./18-mean-value-theorem.en.md) | [ロルの定理と平均値の定理](./18-mean-value-theorem.ja.md) |
+| 19 | [Higher-Order Derivatives](./19-higher-order-derivatives.en.md) | [高階微分](./19-higher-order-derivatives.ja.md) |
+| 20 | [Taylor's Formula](./20-taylor-formula.en.md) | [テイラーの公式](./20-taylor-formula.ja.md) |
 
 ## The thread / 全体の流れ
 
@@ -36,10 +38,16 @@ property (02), and then powers every existence theorem that follows — monotone
 convergence (04), nested intervals (05), the Cauchy criterion (06),
 Bolzano–Weierstrass (07), and the intermediate (09) and extreme (10) value
 theorems. Lessons 08 and 11 carry these ideas into the language of functions and
-sets.
+sets. From there the **differential calculus** is built rigorously (12–20): the
+derivative and its rules, the exponential and logarithm constructed from monotone
+convergence (14), the chain and inverse-function rules, and — resting on the
+extreme value theorem — the mean value theorem (18) and Taylor's formula (20).
 
 このシリーズには1つの一貫したテーマがあります — **実数の完備性** です。デデキントの
 連続性 (01) として導入され、上限性質 (02) として再登場し、その後に続くあらゆる存在
 定理 — 単調収束 (04)、区間縮小法 (05)、コーシーの判定法 (06)、ボルツァーノ・
 ワイエルシュトラス (07)、中間値の定理 (09)、最大値・最小値の定理 (10) — を支えます。
-第08・11課はこれらの考えを関数と集合の言葉へと展開します。
+第08・11課はこれらの考えを関数と集合の言葉へと展開します。そこから **微分法** が厳密に
+構築されます (12–20) — 導関数とその法則、単調収束から構成される指数・対数関数 (14)、
+連鎖律と逆関数の微分、そして最大値・最小値の定理に支えられた平均値の定理 (18) と
+テイラーの公式 (20) です。
