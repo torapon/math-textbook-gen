@@ -106,7 +106,7 @@ continuity at $`a`$. $`\blacksquare`$
 Continuity does **not** imply differentiability. The standard example is the
 absolute value $`f(x) = |x|`$ at $`a = 0`$. Its difference quotient is
 ```math
-\frac{|0 + h| - |0|}{h} = \frac{|h|}{h} = \operatorname{sign}(h),
+\frac{|0 + h| - |0|}{h} = \frac{|h|}{h} = \mathrm{sign}(h),
 ```
 which equals $`+1`$ for $`h > 0`$ and $`-1`$ for $`h < 0`$. The right- and left-hand
 limits disagree, so the limit does not exist: $`|x|`$ is continuous everywhere but

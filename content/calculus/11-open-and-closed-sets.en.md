@@ -32,9 +32,9 @@ descriptions applies to $`x`$:
 > - $`x`$ is a *boundary point* of $`S`$ if every neighborhood of $`x`$ meets **both**
 >   $`S`$ and $`S^c`$.
 
-The collections are the *interior* $`\operatorname{int}(S)`$, the *exterior*, and
+The collections are the *interior* $`\mathrm{int}(S)`$, the *exterior*, and
 the *boundary* $`\partial S`$. They partition the whole line:
-$`\mathbb{R} = \operatorname{int}(S) \sqcup \partial S \sqcup \operatorname{ext}(S)`$.
+$`\mathbb{R} = \mathrm{int}(S) \sqcup \partial S \sqcup \mathrm{ext}(S)`$.
 Interior points belong to $`S`$; exterior points do not; boundary points may or may
 not.
 
@@ -46,7 +46,7 @@ $`1 \in \partial S`$ and $`1 \in S`$.
 
 > **Definition (open / closed).**
 > $`S`$ is *open* if every point of $`S`$ is an interior point — equivalently
-> $`S = \operatorname{int}(S)`$, i.e. $`S`$ contains none of its boundary.
+> $`S = \mathrm{int}(S)`$, i.e. $`S`$ contains none of its boundary.
 > $`S`$ is *closed* if it contains all of its boundary points (equivalently, all
 > its [accumulation points](./07-accumulation-points.en.md)).
 
@@ -102,11 +102,11 @@ not really about distances at all — only about which sets are open.
 ## Worked example
 
 **Problem.** For $`S = \{ \tfrac1n : n \ge 1 \}`$, find
-$`\operatorname{int}(S)`$, $`\partial S`$, and decide whether $`S`$ is open or closed.
+$`\mathrm{int}(S)`$, $`\partial S`$, and decide whether $`S`$ is open or closed.
 
 - *Interior.* Each $`\tfrac1n`$ is isolated: a small enough neighborhood contains no
   *other* point of $`S`$, so it cannot lie inside $`S`$. Thus
-  $`\operatorname{int}(S) = \varnothing`$ — $`S`$ has **no** interior points, so it is
+  $`\mathrm{int}(S) = \varnothing`$ — $`S`$ has **no** interior points, so it is
   **not open**.
 - *Boundary.* Every point $`\tfrac1n`$ is a boundary point (its neighborhoods meet
   $`S`$ at $`\tfrac1n`$ and meet $`S^c`$ in between). Also $`0`$ is a boundary point:
@@ -115,7 +115,7 @@ $`\operatorname{int}(S)`$, $`\partial S`$, and decide whether $`S`$ is open or c
 - *Closed?* The only accumulation point is $`0`$, and $`0 \notin S`$, so $`S`$ does not
   contain all its boundary — $`S`$ is **not closed**.
 
-**Answer.** $`\operatorname{int}(S) = \varnothing`$,
+**Answer.** $`\mathrm{int}(S) = \varnothing`$,
 $`\partial S = \{0\} \cup \{\tfrac1n\}`$; $`S`$ is neither open nor closed. (Adding the
 point $`0`$ makes $`S \cup \{0\}`$ closed.)
 
@@ -133,7 +133,7 @@ point $`0`$ makes $`S \cup \{0\}`$ closed.)
 ## Practice
 
 1. Determine the interior, boundary, open-ness and closed-ness of $`\mathbb{Q}`$.
-2. Show that $`\operatorname{int}(S)`$ is always open and that $`\partial S`$ is always
+2. Show that $`\mathrm{int}(S)`$ is always open and that $`\partial S`$ is always
    closed.
 3. Using the topological criterion, show $`f(x) = x^2`$ is continuous by describing
    $`f^{-1}\big((a,b)\big)`$ for $`0 \le a < b`$ and checking it is open.
@@ -142,15 +142,15 @@ point $`0`$ makes $`S \cup \{0\}`$ closed.)
 <summary>Answers</summary>
 
 1. Every neighborhood of any real contains both rationals and irrationals, so
-   $`\operatorname{int}(\mathbb{Q}) = \varnothing`$ and
+   $`\mathrm{int}(\mathbb{Q}) = \varnothing`$ and
    $`\partial \mathbb{Q} = \mathbb{R}`$. Thus $`\mathbb{Q}`$ is neither open (empty
    interior, yet non-empty) nor closed (its accumulation points are all of
    $`\mathbb{R}`$).
-2. If $`x \in \operatorname{int}(S)`$, some $`(x-\varepsilon,x+\varepsilon)\subseteq S`$;
-   every point of that interval is also interior, so $`\operatorname{int}(S)`$ is
+2. If $`x \in \mathrm{int}(S)`$, some $`(x-\varepsilon,x+\varepsilon)\subseteq S`$;
+   every point of that interval is also interior, so $`\mathrm{int}(S)`$ is
    open. $`\partial S = \overline{S}\cap\overline{S^c}`$ is an intersection of two
    closed sets (closures), hence closed. (Equivalently $`(\partial S)^c =
-   \operatorname{int}(S)\cup\operatorname{ext}(S)`$ is a union of open sets, so
+   \mathrm{int}(S)\cup\mathrm{ext}(S)`$ is a union of open sets, so
    open.)
 3. For $`0\le a<b`$, $`f^{-1}((a,b)) = (-\sqrt b,-\sqrt a)\cup(\sqrt a,\sqrt b)`$ (with
    the convention $`\sqrt a = 0`$ when $`a=0`$, giving a single interval

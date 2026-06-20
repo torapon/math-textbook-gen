@@ -46,6 +46,9 @@ creating or editing content.
 - Do **not** backslash-escape punctuation inside math (`\*`, `\%`, etc.). Markdown
   escaping does not apply in math mode; `\*` is an undefined KaTeX control sequence
   and breaks rendering on GitHub. For a literal star use `^{*}` / `{*}`.
+- Do **not** use `\operatorname{...}`. GitHub's math allowlist rejects it ("The
+  following macros are not allowed: operatorname"). For an upright multi-letter
+  operator name (`int`, `ext`, `sign`, etc.) use `\mathrm{...}` instead.
 - Number equations only when later referenced; otherwise leave them unnumbered.
 
 ## Lesson structure
