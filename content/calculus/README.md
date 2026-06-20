@@ -23,6 +23,8 @@ of the real numbers to open and closed sets. Each lesson has an English
 | 12 | [The Derivative: Definition and Differentiability](./12-derivative-definition.en.md) | [導関数：定義と微分可能性](./12-derivative-definition.ja.md) |
 | 13 | [Rules of Differentiation](./13-differentiation-rules.en.md) | [微分の法則](./13-differentiation-rules.ja.md) |
 | 14 | [The Exponential and Logarithm](./14-exponential-and-logarithm.en.md) | [指数関数と対数関数](./14-exponential-and-logarithm.ja.md) |
+| 15 | [Derivatives of the Elementary Functions](./15-derivatives-elementary-functions.en.md) | [初等関数の微分](./15-derivatives-elementary-functions.ja.md) |
+| 16 | [The Chain Rule](./16-chain-rule.en.md) | [合成関数の微分（連鎖律）](./16-chain-rule.ja.md) |
 
 ## The thread / 全体の流れ
 
