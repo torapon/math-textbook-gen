@@ -25,6 +25,8 @@ of the real numbers to open and closed sets. Each lesson has an English
 | 14 | [The Exponential and Logarithm](./14-exponential-and-logarithm.en.md) | [指数関数と対数関数](./14-exponential-and-logarithm.ja.md) |
 | 15 | [Derivatives of the Elementary Functions](./15-derivatives-elementary-functions.en.md) | [初等関数の微分](./15-derivatives-elementary-functions.ja.md) |
 | 16 | [The Chain Rule](./16-chain-rule.en.md) | [合成関数の微分（連鎖律）](./16-chain-rule.ja.md) |
+| 17 | [The Derivative of an Inverse Function](./17-inverse-function-derivative.en.md) | [逆関数の微分](./17-inverse-function-derivative.ja.md) |
+| 18 | [Rolle's Theorem and the Mean Value Theorem](./18-mean-value-theorem.en.md) | [ロルの定理と平均値の定理](./18-mean-value-theorem.ja.md) |
 
 ## The thread / 全体の流れ
 
