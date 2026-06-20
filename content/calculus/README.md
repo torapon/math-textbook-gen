@@ -20,6 +20,8 @@ of the real numbers to open and closed sets. Each lesson has an English
 | 09 | [The Intermediate Value Theorem](./09-intermediate-value-theorem.en.md) | [中間値の定理](./09-intermediate-value-theorem.ja.md) |
 | 10 | [The Extreme Value Theorem](./10-extreme-value-theorem.en.md) | [最大値・最小値の定理](./10-extreme-value-theorem.ja.md) |
 | 11 | [Open and Closed Sets, Interior and Boundary](./11-open-and-closed-sets.en.md) | [開集合と閉集合・内部と境界](./11-open-and-closed-sets.ja.md) |
+| 12 | [The Derivative: Definition and Differentiability](./12-derivative-definition.en.md) | [導関数：定義と微分可能性](./12-derivative-definition.ja.md) |
+| 13 | [Rules of Differentiation](./13-differentiation-rules.en.md) | [微分の法則](./13-differentiation-rules.ja.md) |
 
 ## The thread / 全体の流れ
 
