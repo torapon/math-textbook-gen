@@ -42,6 +42,11 @@ creating or editing content.
 - Use standard LaTeX. Prefer `\frac`, `\sqrt`, `\cdot`, `\times`, `\le`, `\ge`, `\neq`.
 - Align multi-step derivations with `aligned` inside the ` ```math ` fence (see above).
 - Do **not** use `\(`, `\)`, `\[`, `\]`. Inline is `` $`...`$ ``; display is ` ```math `.
+- Do **not** fake a display equation with inline `` $`\displaystyle ...`$ ``. GitHub
+  wraps an oversized inline element in a horizontally-scrolling box. For a standalone
+  centered equation use a ` ```math ` fence (blockquoted as `> ```math` when it is the
+  body of a definition/theorem box); keep inline math in normal style (no
+  `\displaystyle`), which renders compactly (`\lim`, `\sum` with side-set limits).
   (For Pandoc export, normalize both back to `$...$`/`$$...$$` first; see the README.)
 - Do **not** backslash-escape punctuation inside math (`\*`, `\%`, etc.). Markdown
   escaping does not apply in math mode; `\*` is an undefined KaTeX control sequence

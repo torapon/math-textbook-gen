@@ -21,7 +21,10 @@ and to extract the two limits that will produce their derivatives.
 
 ## The number $`e`$
 
-> **Definition.** $`\displaystyle e = \lim_{n \to \infty}\left(1 + \frac1n\right)^{n}.`$
+> **Definition.**
+> ```math
+> e = \lim_{n \to \infty}\left(1 + \frac1n\right)^{n}.
+> ```
 
 This limit is not obvious — we must show the sequence $`a_n = (1 + 1/n)^n`$ actually
 converges. By the [monotone convergence theorem](./04-monotone-convergence.en.md) it
@@ -52,7 +55,9 @@ Replacing $`1`$ by a real parameter $`x`$ defines the exponential at every real
 number.
 
 > **Definition.** For $`x \in \mathbb{R}`$,
-> $`\displaystyle e^{x} = \exp(x) = \lim_{n \to \infty}\left(1 + \frac{x}{n}\right)^{n}.`$
+> ```math
+> e^{x} = \exp(x) = \lim_{n \to \infty}\left(1 + \frac{x}{n}\right)^{n}.
+> ```
 
 The same monotone-and-bounded reasoning (for $`n > |x|`$) shows this limit exists for
 every $`x`$, and for rational $`x`$ it agrees with ordinary powers and roots of $`e`$,
@@ -97,7 +102,10 @@ a matching upper bound near $`0`$.
 These two bounds pin down the exponential's behavior at $`0`$ exactly — the fact that
 makes $`e^x`$ its own derivative next lesson.
 
-> **Theorem.** $`\displaystyle \lim_{x \to 0} \frac{e^{x} - 1}{x} = 1.`$
+> **Theorem.**
+> ```math
+> \lim_{x \to 0} \frac{e^{x} - 1}{x} = 1.
+> ```
 
 *Proof.* For $`0 < x < 1`$, the lemma's lower bound gives $`e^x - 1 \ge x`$, so
 $`\dfrac{e^x - 1}{x} \ge 1`$; the upper bound gives $`e^x - 1 \le \dfrac{x}{1 - x}`$, so
@@ -128,7 +136,10 @@ and $`\ln`$ is strictly increasing with $`\ln y \to \infty`$ as $`y \to \infty`$
 $`\ln y \to -\infty`$ as $`y \to 0^+`$. The companion limit follows from the last
 theorem by reciprocals.
 
-> **Theorem.** $`\displaystyle \lim_{t \to 0} \frac{\ln(1 + t)}{t} = 1.`$
+> **Theorem.**
+> ```math
+> \lim_{t \to 0} \frac{\ln(1 + t)}{t} = 1.
+> ```
 
 *Proof.* Put $`x = \ln(1 + t)`$, so $`t = e^{x} - 1`$, and by continuity of $`\ln`$
 and $`\exp`$ we have $`t \to 0 \iff x \to 0`$. Then
@@ -139,7 +150,7 @@ and $`\exp`$ we have $`t \to 0 \iff x \to 0`$. Then
 
 ## Worked example
 
-**Problem.** Evaluate $`\displaystyle \lim_{x \to 0} \frac{e^{3x} - 1}{x}`$.
+**Problem.** Evaluate $`\lim_{x \to 0} \frac{e^{3x} - 1}{x}`$.
 
 Write $`u = 3x`$, so $`u \to 0`$ as $`x \to 0`$ and
 ```math
@@ -165,7 +176,7 @@ hint that $`\dfrac{d}{dx}e^{ax} = a\,e^{ax}`$.)
 1. Show $`2 \le (1 + 1/n)^n < 3`$ for every $`n \ge 1`$.
 2. From $`e^x \ge 1 + x`$ (all real $`x`$), deduce $`e^x \le \dfrac{1}{1-x}`$ for
    $`x < 1`$.
-3. Evaluate $`\displaystyle\lim_{x \to 0}\frac{e^{ax} - 1}{x}`$ for a constant $`a`$.
+3. Evaluate $`\lim_{x \to 0}\frac{e^{ax} - 1}{x}`$ for a constant $`a`$.
 4. Prove $`\ln(uv) = \ln u + \ln v`$ for $`u, v > 0`$ using $`e^{s+t} = e^s e^t`$.
 
 <details>

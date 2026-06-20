@@ -60,8 +60,8 @@ $`\dfrac{d}{dx}\ln|x| = \dfrac1x`$。）
 $`x \to 0`$ で $`\cos x \to 1`$ なので、はさみうちの定理から極限が得られます（$`x`$ の
 偶関数なので両側が一致します）。
 
-> **補題.** $`\displaystyle \lim_{x \to 0}\frac{\sin x}{x} = 1`$、したがって
-> $`\displaystyle \lim_{x \to 0}\frac{1 - \cos x}{x} = 0.`$
+> **補題.** $`\lim_{x \to 0}\frac{\sin x}{x} = 1`$、したがって
+> $`\lim_{x \to 0}\frac{1 - \cos x}{x} = 0.`$
 
 *2つ目の極限* は有理化で従います。
 ```math
@@ -133,7 +133,7 @@ g'(x) = e^x \sin x + e^x \cos x = e^x(\sin x + \cos x).
 1. $`\dfrac{\ln x}{x}`$ を微分しなさい。
 2. $`\dfrac{1}{\cos x}`$（すなわち $`\sec x`$）を微分し、簡単にしなさい。
 3. $`\dfrac{d}{dx}\big(e^x \cos x\big)`$ を求めなさい。
-4. 極限 $`\tfrac{\sin x}{x}\to 1`$ から、$`\displaystyle\lim_{x\to0}\frac{\sin 5x}{\sin 2x}`$ を求めなさい。
+4. 極限 $`\tfrac{\sin x}{x}\to 1`$ から、$`\lim_{x\to0}\frac{\sin 5x}{\sin 2x}`$ を求めなさい。
 
 <details>
 <summary>解答</summary>

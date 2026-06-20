@@ -29,7 +29,7 @@ how long? The $`\varepsilon`$–$`N`$ definition makes it precise.
 > \text{for every } \varepsilon > 0 \text{ there exists } N \in \mathbb{N}
 > \text{ such that } \; n \ge N \implies |a_n - L| < \varepsilon.
 > ```
-> We then write $`\displaystyle \lim_{n\to\infty} a_n = L`$, or $`a_n \to L`$, and
+> We then write $`\lim_{n\to\infty} a_n = L`$, or $`a_n \to L`$, and
 > call $`L`$ the *limit*. If no such $`L`$ exists, $`(a_n)`$ *diverges*.
 
 Read it as a challenge–response game. An adversary names a tolerance
@@ -65,7 +65,7 @@ monotonicity, is the subject of the [next lesson](./04-monotone-convergence.en.m
 ## Worked example
 
 **Problem.** Prove directly from the definition that
-$`\displaystyle \lim_{n\to\infty} \frac{n+2}{2n+1} = \frac12`$.
+$`\lim_{n\to\infty} \frac{n+2}{2n+1} = \frac12`$.
 
 We estimate the gap to the candidate limit $`L = \tfrac12`$:
 
@@ -103,7 +103,7 @@ any $`N`$ that works will do.
 
 ## Practice
 
-1. Using the definition, prove $`\displaystyle \lim_{n\to\infty} \frac{1}{n^2} = 0`$.
+1. Using the definition, prove $`\lim_{n\to\infty} \frac{1}{n^2} = 0`$.
 2. Prove that $`a_n = (-1)^n`$ diverges. *(Hint: suppose $`a_n \to L`$ and take
    $`\varepsilon = 1`$.)*
 3. Show that if $`a_n \to L`$ and $`a_n \ge 0`$ for all $`n`$, then $`L \ge 0`$.

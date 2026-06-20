@@ -24,7 +24,7 @@ and connects them to the sequence limits we already understand.
 
 > **Definition (limit of a function).** Let $`a`$ be an
 > [accumulation point](./07-accumulation-points.en.md) of $`D`$. We say
-> $`\displaystyle \lim_{x \to a} f(x) = L`$ if:
+> $`\lim_{x \to a} f(x) = L`$ if:
 > ```math
 > \text{for every } \varepsilon > 0 \text{ there is } \delta > 0 \text{ such that }
 > 0 < |x - a| < \delta,\ x \in D \implies |f(x) - L| < \varepsilon.
@@ -43,7 +43,7 @@ limit.
 > $`f`$ is *continuous* (on $`D`$) if it is continuous at every point of $`D`$.
 
 When $`a`$ is an accumulation point of $`D`$, continuity at $`a`$ says exactly
-$`\displaystyle \lim_{x\to a} f(x) = f(a)`$: the limit exists **and** equals the
+$`\lim_{x\to a} f(x) = f(a)`$: the limit exists **and** equals the
 function's value. Three things must agree — $`f(a)`$ is defined, the limit exists,
 and they are equal.
 
@@ -51,7 +51,7 @@ and they are equal.
 
 Function limits and sequence limits are two views of the same idea:
 
-> **Theorem (sequential criterion).** $`\displaystyle\lim_{x\to a} f(x) = L`$ if and
+> **Theorem (sequential criterion).** $`\lim_{x\to a} f(x) = L`$ if and
 > only if for **every** sequence $`(x_n)`$ in $`D \setminus \{a\}`$ with $`x_n \to a`$,
 > we have $`f(x_n) \to L`$. Consequently, $`f`$ is continuous at $`a`$ iff
 > $`x_n \to a \Rightarrow f(x_n) \to f(a)`$ for every such sequence.

@@ -81,7 +81,7 @@ criterion holds precisely because $`\mathbb{R}`$ has no gaps.
 
 ## Worked example
 
-**Problem.** Show $`a_n = \displaystyle\sum_{k=1}^{n} \frac{1}{k^2}`$ converges,
+**Problem.** Show $`a_n = \sum_{k=1}^{n} \frac{1}{k^2}`$ converges,
 without computing its value, by verifying it is Cauchy.
 
 For $`m > n`$,

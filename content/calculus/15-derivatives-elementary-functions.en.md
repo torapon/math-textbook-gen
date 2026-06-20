@@ -64,8 +64,8 @@ Dividing by $`\sin x > 0`$ and inverting yields $`\cos x \le \dfrac{\sin x}{x} \
 Since $`\cos x \to 1`$ as $`x \to 0`$, the squeeze theorem gives the limit (it is even
 in $`x`$, so both sides agree):
 
-> **Lemma.** $`\displaystyle \lim_{x \to 0}\frac{\sin x}{x} = 1`$, and consequently
-> $`\displaystyle \lim_{x \to 0}\frac{1 - \cos x}{x} = 0.`$
+> **Lemma.** $`\lim_{x \to 0}\frac{\sin x}{x} = 1`$, and consequently
+> $`\lim_{x \to 0}\frac{1 - \cos x}{x} = 0.`$
 
 *The second limit* follows by rationalizing:
 ```math
@@ -140,7 +140,7 @@ g'(x) = e^x \sin x + e^x \cos x = e^x(\sin x + \cos x).
 1. Differentiate $`\dfrac{\ln x}{x}`$.
 2. Differentiate $`\dfrac{1}{\cos x}`$ (i.e. $`\sec x`$) and simplify.
 3. Find $`\dfrac{d}{dx}\big(e^x \cos x\big)`$.
-4. From the limit $`\tfrac{\sin x}{x}\to 1`$, evaluate $`\displaystyle\lim_{x\to0}\frac{\sin 5x}{\sin 2x}`$.
+4. From the limit $`\tfrac{\sin x}{x}\to 1`$, evaluate $`\lim_{x\to0}\frac{\sin 5x}{\sin 2x}`$.
 
 <details>
 <summary>Answers</summary>
