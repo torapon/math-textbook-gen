@@ -22,6 +22,7 @@ of the real numbers to open and closed sets. Each lesson has an English
 | 11 | [Open and Closed Sets, Interior and Boundary](./11-open-and-closed-sets.en.md) | [開集合と閉集合・内部と境界](./11-open-and-closed-sets.ja.md) |
 | 12 | [The Derivative: Definition and Differentiability](./12-derivative-definition.en.md) | [導関数：定義と微分可能性](./12-derivative-definition.ja.md) |
 | 13 | [Rules of Differentiation](./13-differentiation-rules.en.md) | [微分の法則](./13-differentiation-rules.ja.md) |
+| 14 | [The Exponential and Logarithm](./14-exponential-and-logarithm.en.md) | [指数関数と対数関数](./14-exponential-and-logarithm.ja.md) |
 
 ## The thread / 全体の流れ
 
