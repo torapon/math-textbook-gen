@@ -121,4 +121,5 @@ $`p(x) \to +\infty`$ at one end and $`-\infty`$ at the other, so $`p`$ changes s
 
 - [The Nested Interval Theorem](./05-nested-intervals.en.md)
 - [Functions, Limits, and Continuity](./08-functions-and-continuity.en.md)
-- [Open and Closed Sets](./10-open-and-closed-sets.en.md)
+- [The Extreme Value Theorem](./10-extreme-value-theorem.en.md)
+- [Open and Closed Sets](./11-open-and-closed-sets.en.md)

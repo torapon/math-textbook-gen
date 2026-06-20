@@ -113,4 +113,5 @@ $`-\infty`$ となり符号を変えるからです。
 
 - [区間縮小法](./05-nested-intervals.ja.md)
 - [関数・極限・連続性](./08-functions-and-continuity.ja.md)
-- [開集合と閉集合](./10-open-and-closed-sets.ja.md)
+- [最大値・最小値の定理](./10-extreme-value-theorem.ja.md)
+- [開集合と閉集合](./11-open-and-closed-sets.ja.md)

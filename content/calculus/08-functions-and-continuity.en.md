@@ -64,9 +64,44 @@ limits respect arithmetic:
 > ```math
 > f \pm g \to L \pm M, \qquad fg \to LM, \qquad \frac{f}{g} \to \frac{L}{M}\ (M \neq 0).
 > ```
-> Hence sums, products, quotients, and compositions of continuous functions are
-> continuous (where defined). Polynomials are continuous everywhere; rational
-> functions wherever the denominator is nonzero.
+
+## Building continuous functions
+
+The sequential criterion turns these limit laws into a recipe for *manufacturing*
+continuous functions out of simpler ones — each with a one-line proof.
+
+> **Theorem (continuity under arithmetic).** If $`f`$ and $`g`$ are continuous at
+> $`a`$, then so are the sum $`f + g`$, the difference $`f - g`$, any constant multiple
+> $`cf`$, and the product $`fg`$; and so is the quotient $`f/g`$ provided $`g(a) \neq 0`$.
+
+*Proof.* Take any sequence $`x_n \to a`$ in the common domain. Continuity gives
+$`f(x_n) \to f(a)`$ and $`g(x_n) \to g(a)`$, and the algebra of limits **for
+sequences** then yields $`f(x_n) \pm g(x_n) \to f(a) \pm g(a)`$, $`c\,f(x_n) \to
+c\,f(a)`$, $`f(x_n)\,g(x_n) \to f(a)\,g(a)`$, and — when $`g(a) \neq 0`$, so
+$`g(x_n) \neq 0`$ from some point on — $`f(x_n)/g(x_n) \to f(a)/g(a)`$. By the
+sequential criterion, each combination is continuous at $`a`$. $`\blacksquare`$
+
+Starting from the two most basic continuous functions — the constant $`x \mapsto c`$
+and the identity $`x \mapsto x`$ — this theorem builds every **polynomial** (finitely
+many sums and products) and every **rational function**, the latter continuous
+wherever its denominator is nonzero.
+
+Composition needs its own argument: it does *not* reduce to the algebra of limits.
+(The naive "limit of a composite" can fail when the inner function actually hits
+its target value — which is exactly why we state the result for *continuous*
+functions, where the value equals the limit.)
+
+> **Theorem (continuity of compositions).** If $`g`$ is continuous at $`a`$ and $`f`$
+> is continuous at $`b = g(a)`$, then the composite $`f \circ g`$ is continuous at
+> $`a`$.
+
+*Proof.* Let $`x_n \to a`$. Continuity of $`g`$ at $`a`$ gives $`g(x_n) \to g(a) = b`$;
+then continuity of $`f`$ at $`b`$ gives $`f\big(g(x_n)\big) \to f(b) = f\big(g(a)\big)`$.
+By the sequential criterion, $`f \circ g`$ is continuous at $`a`$. $`\blacksquare`$
+
+For instance $`x \mapsto \sqrt{x^2 + 1}`$ is continuous everywhere — it is the
+(continuous) square-root function composed with the polynomial $`x^2 + 1`$, whose
+values stay positive.
 
 The sequential criterion is also the easiest way to prove a limit *does not*
 exist: find two sequences $`x_n \to a`$ and $`x_n' \to a`$ along which $`f`$ tends to
@@ -142,3 +177,4 @@ choice of $`g(0)`$ can make it continuous there.
 - [Sequences and Their Limits](./03-sequence-limits.en.md)
 - [Accumulation Points and the Bolzano–Weierstrass Theorem](./07-accumulation-points.en.md)
 - [The Intermediate Value Theorem](./09-intermediate-value-theorem.en.md)
+- [The Extreme Value Theorem](./10-extreme-value-theorem.en.md)

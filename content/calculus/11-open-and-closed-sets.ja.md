@@ -155,3 +155,4 @@ $`S \cup \{0\}`$ は閉になる。）
 - [集積点とボルツァーノ・ワイエルシュトラスの定理](./07-accumulation-points.ja.md)
 - [関数・極限・連続性](./08-functions-and-continuity.ja.md)
 - [中間値の定理](./09-intermediate-value-theorem.ja.md)
+- [最大値・最小値の定理](./10-extreme-value-theorem.ja.md)

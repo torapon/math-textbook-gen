@@ -74,7 +74,7 @@ its limit in $`F`$ — closed sets are "sealed" under taking limits.
 A finite set has no accumulation points, so it is closed automatically. The
 deeper structural facts (arbitrary intersections and finite unions of closed sets
 are closed; closed $`=`$ complement of open) are developed in the
-[final lesson](./10-open-and-closed-sets.en.md).
+[later lesson](./11-open-and-closed-sets.en.md).
 
 ## Worked example
 
@@ -135,4 +135,4 @@ closed because $`0 \notin S`$.
 
 - [The Nested Interval Theorem](./05-nested-intervals.en.md)
 - [Functions, Limits, and Continuity](./08-functions-and-continuity.en.md)
-- [Open and Closed Sets](./10-open-and-closed-sets.en.md)
+- [Open and Closed Sets](./11-open-and-closed-sets.en.md)

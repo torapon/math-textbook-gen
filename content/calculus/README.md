@@ -18,7 +18,8 @@ of the real numbers to open and closed sets. Each lesson has an English
 | 07 | [Accumulation Points and Bolzano–Weierstrass](./07-accumulation-points.en.md) | [集積点とボルツァーノ・ワイエルシュトラスの定理](./07-accumulation-points.ja.md) |
 | 08 | [Functions, Limits, and Continuity](./08-functions-and-continuity.en.md) | [関数・極限・連続性](./08-functions-and-continuity.ja.md) |
 | 09 | [The Intermediate Value Theorem](./09-intermediate-value-theorem.en.md) | [中間値の定理](./09-intermediate-value-theorem.ja.md) |
-| 10 | [Open and Closed Sets, Interior and Boundary](./10-open-and-closed-sets.en.md) | [開集合と閉集合・内部と境界](./10-open-and-closed-sets.ja.md) |
+| 10 | [The Extreme Value Theorem](./10-extreme-value-theorem.en.md) | [最大値・最小値の定理](./10-extreme-value-theorem.ja.md) |
+| 11 | [Open and Closed Sets, Interior and Boundary](./11-open-and-closed-sets.en.md) | [開集合と閉集合・内部と境界](./11-open-and-closed-sets.ja.md) |
 
 ## The thread / 全体の流れ
 
@@ -26,11 +27,12 @@ The series has one recurring theme: the **completeness of $`\mathbb{R}`$**. It i
 introduced as Dedekind continuity (01), reappears as the least-upper-bound
 property (02), and then powers every existence theorem that follows — monotone
 convergence (04), nested intervals (05), the Cauchy criterion (06),
-Bolzano–Weierstrass (07), and the intermediate value theorem (09). Lessons 08 and
-10 carry these ideas into the language of functions and sets.
+Bolzano–Weierstrass (07), and the intermediate (09) and extreme (10) value
+theorems. Lessons 08 and 11 carry these ideas into the language of functions and
+sets.
 
 このシリーズには1つの一貫したテーマがあります — **実数の完備性** です。デデキントの
 連続性 (01) として導入され、上限性質 (02) として再登場し、その後に続くあらゆる存在
 定理 — 単調収束 (04)、区間縮小法 (05)、コーシーの判定法 (06)、ボルツァーノ・
-ワイエルシュトラス (07)、中間値の定理 (09) — を支えます。第08・10課はこれらの考えを
-関数と集合の言葉へと展開します。
+ワイエルシュトラス (07)、中間値の定理 (09)、最大値・最小値の定理 (10) — を支えます。
+第08・11課はこれらの考えを関数と集合の言葉へと展開します。
