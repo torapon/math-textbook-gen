@@ -42,6 +42,10 @@ creating or editing content.
 - Use standard LaTeX. Prefer `\frac`, `\sqrt`, `\cdot`, `\times`, `\le`, `\ge`, `\neq`.
 - Align multi-step derivations with `aligned` inside the ` ```math ` fence (see above).
 - Do **not** use `\(`, `\)`, `\[`, `\]`. Inline is `` $`...`$ ``; display is ` ```math `.
+- Do **not** put a ` ```math ` fence inside a list item (indented under a `-` bullet).
+  GitHub does not compile an indented math fence and prints the raw LaTeX. Keep the
+  math inline (`` $`...`$ ``) within the bullet, or move it to a top-level fence
+  outside the list.
 - Do **not** fake a display equation with inline `` $`\displaystyle ...`$ ``. GitHub
   wraps an oversized inline element in a horizontally-scrolling box. For a standalone
   centered equation use a ` ```math ` fence (blockquoted as `> ```math` when it is the

@@ -41,9 +41,7 @@ need:
   grows to $`\big(1 - \tfrac{j}{n+1}\big)`$, and an extra positive term is added. So
   $`a_{n+1} > a_n`$.
 - **Bounded.** Each product of factors is $`\le 1`$, and $`k! \ge 2^{k-1}`$, so
-  ```math
-  a_n \le \sum_{k=0}^{n}\frac{1}{k!} \le 1 + \sum_{k=1}^{n}\frac{1}{2^{k-1}} < 1 + 2 = 3.
-  ```
+  $`a_n \le \sum_{k=0}^{n}\frac{1}{k!} \le 1 + \sum_{k=1}^{n}\frac{1}{2^{k-1}} < 1 + 2 = 3`$.
 
 Since $`a_1 = 2`$ and the sequence increases, $`2 \le a_n < 3`$ for all $`n`$, and the
 limit exists with $`2 < e \le 3`$. Its value is $`e = 2.71828\ldots`$ — irrational,

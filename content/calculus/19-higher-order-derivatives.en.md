@@ -39,9 +39,7 @@ Repeated differentiation often falls into a pattern:
 - **The exponential** is a fixed point: $`\dfrac{d^{n}}{dx^{n}}e^{x} = e^{x}`$, and
   $`\dfrac{d^{n}}{dx^{n}}e^{ax} = a^{n}e^{ax}`$.
 - **Sine and cosine** cycle with period $`4`$:
-  ```math
-  \frac{d^{n}}{dx^{n}}\sin x = \sin\!\Big(x + \frac{n\pi}{2}\Big),
-  ```
+  $`\dfrac{d^{n}}{dx^{n}}\sin x = \sin\!\big(x + \tfrac{n\pi}{2}\big)`$,
   so $`\sin \to \cos \to -\sin \to -\cos \to \sin \to \cdots`$.
 
 ## Concavity: what $`f''`$ means
