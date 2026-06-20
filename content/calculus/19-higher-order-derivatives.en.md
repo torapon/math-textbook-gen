@@ -21,9 +21,10 @@ is exactly what produces the Taylor approximation of the next lesson.
 > **Definition.** The *second derivative* of $`f`$ is $`f'' = (f')'`$, and inductively
 > the *$`n`$-th derivative* is $`f^{(n)} = \big(f^{(n-1)}\big)'`$, with $`f^{(0)} = f`$.
 
-Common notations for the $`n`$-th derivative:
+Common notations for the $`n`$-th derivative (physicists also write $`\dot y, \ddot y`$
+for $`n = 1, 2`$):
 ```math
-f^{(n)}(x), \qquad \frac{d^{n} y}{dx^{n}}, \qquad \frac{d^{n}}{dx^{n}}f(x), \qquad \dot{}\,\ddot{}\ \text{(for } n=1,2 \text{ in physics)}.
+f^{(n)}(x), \qquad \frac{d^{n} y}{dx^{n}}, \qquad \frac{d^{n}}{dx^{n}}f(x).
 ```
 A function with $`n`$ continuous derivatives is called $`C^{n}`$; one differentiable
 infinitely often (like $`e^x`$ or $`\sin x`$) is **smooth**, written $`C^{\infty}`$.

@@ -43,7 +43,11 @@ $`f(x) = y`$, $`f(a) = b`$. Because $`g`$ is injective, $`y \neq b`$ forces $`x 
 and because $`g`$ is continuous, $`x \to a`$ as $`k \to 0`$. Now flip the difference
 quotient:
 ```math
-\frac{g(b+k) - g(b)}{k} = \frac{x - a}{f(x) - f(a)} = \left(\frac{f(x) - f(a)}{x - a}\right)^{-1}.
+\begin{aligned}
+\frac{g(b+k) - g(b)}{k}
+&= \frac{x - a}{f(x) - f(a)}
+= \left(\frac{f(x) - f(a)}{x - a}\right)^{-1}.
+\end{aligned}
 ```
 As $`k \to 0`$ we have $`x \to a`$, so the inner quotient tends to $`f'(a) \neq 0`$, and
 its reciprocal tends to $`1/f'(a)`$. $`\blacksquare`$
@@ -76,8 +80,11 @@ the same answer as before, now obtained purely from the inverse rule.
 **Arcsine.** $`y = \arcsin x`$ means $`x = \sin y`$ with $`y \in [-\tfrac\pi2,
 \tfrac\pi2]`$, where $`\cos y \ge 0`$. Since $`\sin' = \cos`$,
 ```math
-\frac{d}{dx}\arcsin x = \frac{1}{\cos y} = \frac{1}{\sqrt{1 - \sin^2 y}} = \frac{1}{\sqrt{1 - x^2}}
-\qquad (-1 < x < 1).
+\begin{aligned}
+\frac{d}{dx}\arcsin x
+&= \frac{1}{\cos y} = \frac{1}{\sqrt{1 - \sin^2 y}} \\
+&= \frac{1}{\sqrt{1 - x^2}} \qquad (-1 < x < 1).
+\end{aligned}
 ```
 
 **Arctangent.** $`y = \arctan x`$ means $`x = \tan y`$; with $`\tan' = \sec^2 = 1 +

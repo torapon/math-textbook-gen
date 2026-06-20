@@ -20,9 +20,9 @@ prerequisites: [13-differentiation-rules, 16-chain-rule]
 > **定義.** $`f`$ の *第2次導関数* は $`f'' = (f')'`$ であり、帰納的に *第$`n`$次導関数*
 > は $`f^{(n)} = \big(f^{(n-1)}\big)'`$、ただし $`f^{(0)} = f`$ とする。
 
-第$`n`$次導関数のよく使う記法:
+第$`n`$次導関数のよく使う記法（物理では $`n = 1, 2`$ を $`\dot y, \ddot y`$ とも書きます）:
 ```math
-f^{(n)}(x), \qquad \frac{d^{n} y}{dx^{n}}, \qquad \frac{d^{n}}{dx^{n}}f(x), \qquad \dot{}\,\ddot{}\ (\text{物理では } n=1,2).
+f^{(n)}(x), \qquad \frac{d^{n} y}{dx^{n}}, \qquad \frac{d^{n}}{dx^{n}}f(x).
 ```
 連続な導関数を $`n`$ 個もつ関数を $`C^{n}`$ といいます。無限回微分可能な関数（$`e^x`$ や
 $`\sin x`$ など）は **滑らか**（smooth）で、$`C^{\infty}`$ と書きます。

@@ -49,6 +49,11 @@ creating or editing content.
 - Do **not** use `\operatorname{...}`. GitHub's math allowlist rejects it ("The
   following macros are not allowed: operatorname"). For an upright multi-letter
   operator name (`int`, `ext`, `sign`, etc.) use `\mathrm{...}` instead.
+- Keep display equations from overflowing their box (GitHub adds a horizontal
+  scrollbar when a line is too wide). Break long equality chains across lines with
+  an `aligned` block (`&=` at each break), prefer compact forms (`\prod`,
+  `\sum`) over spelled-out products, and move long `\text{...}` annotations or
+  domain conditions into the surrounding prose rather than onto the math line.
 - Number equations only when later referenced; otherwise leave them unnumbered.
 
 ## Lesson structure

@@ -27,8 +27,9 @@ prerequisites: [02-supremum-infimum, 04-monotone-convergence, 09-intermediate-va
 **増加** かつ **上に有界** であることを示せば十分です。二項定理で展開します。
 ```math
 a_n = \left(1 + \frac1n\right)^n
-= \sum_{k=0}^{n} \frac{1}{k!}\,\underbrace{\Big(1 - \tfrac1n\Big)\Big(1 - \tfrac2n\Big)\cdots\Big(1 - \tfrac{k-1}{n}\Big)}_{k\text{ 個の因子、各々 }(0,1]\text{ に属す}}.
+= \sum_{k=0}^{n} \frac{1}{k!}\prod_{j=0}^{k-1}\Big(1 - \frac{j}{n}\Big).
 ```
+$`k`$ 個の各因子 $`1 - j/n`$ は $`(0, 1]`$ に属し、これが必要な2つの事実を導きます。
 
 - **増加.** $`n`$ から $`n+1`$ へ移ると、各因子 $`\big(1 - \tfrac{j}{n}\big)`$ は
   $`\big(1 - \tfrac{j}{n+1}\big)`$ へ増え、さらに正の項が1つ加わります。ゆえに

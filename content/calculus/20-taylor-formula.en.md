@@ -66,7 +66,10 @@ rearranges to the claim. $`\blacksquare`$
 *Proof of the theorem.* Fix $`x`$ and view the Taylor expansion **about the moving
 base point $`t`$**: define
 ```math
-F(t) = f(x) - \sum_{k=0}^{n}\frac{f^{(k)}(t)}{k!}\,(x - t)^{k}, \qquad G(t) = (x - t)^{n+1}.
+\begin{aligned}
+F(t) &= f(x) - \sum_{k=0}^{n}\frac{f^{(k)}(t)}{k!}\,(x - t)^{k}, \\
+G(t) &= (x - t)^{n+1}.
+\end{aligned}
 ```
 At the endpoints, $`F(x) = 0`$ and $`F(a) = f(x) - P_n(x) = R_n(x)`$, while $`G(x) = 0`$
 and $`G(a) = (x-a)^{n+1}`$. The sum in $`F`$ **telescopes** when differentiated: every

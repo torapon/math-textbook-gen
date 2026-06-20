@@ -40,7 +40,11 @@ $`y = x`$ について鏡映したもので、鏡映は傾きをその **逆数*
 $`f(x) = y`$, $`f(a) = b`$。$`g`$ は単射なので $`y \neq b`$ から $`x \neq a`$ が従い、
 $`g`$ は連続なので $`k \to 0`$ で $`x \to a`$。差分商をひっくり返します。
 ```math
-\frac{g(b+k) - g(b)}{k} = \frac{x - a}{f(x) - f(a)} = \left(\frac{f(x) - f(a)}{x - a}\right)^{-1}.
+\begin{aligned}
+\frac{g(b+k) - g(b)}{k}
+&= \frac{x - a}{f(x) - f(a)}
+= \left(\frac{f(x) - f(a)}{x - a}\right)^{-1}.
+\end{aligned}
 ```
 $`k \to 0`$ のとき $`x \to a`$ なので、内側の商は $`f'(a) \neq 0`$ に近づき、その逆数は
 $`1/f'(a)`$ に近づきます。$`\blacksquare`$
@@ -71,8 +75,11 @@ g'(x) = \frac{1}{f'(g(x))} = \frac{1}{2\sqrt{x}},
 **逆正弦.** $`y = \arcsin x`$ は $`x = \sin y`$（$`y \in [-\tfrac\pi2, \tfrac\pi2]`$、
 そこで $`\cos y \ge 0`$）を意味します。$`\sin' = \cos`$ なので、
 ```math
-\frac{d}{dx}\arcsin x = \frac{1}{\cos y} = \frac{1}{\sqrt{1 - \sin^2 y}} = \frac{1}{\sqrt{1 - x^2}}
-\qquad (-1 < x < 1).
+\begin{aligned}
+\frac{d}{dx}\arcsin x
+&= \frac{1}{\cos y} = \frac{1}{\sqrt{1 - \sin^2 y}} \\
+&= \frac{1}{\sqrt{1 - x^2}} \qquad (-1 < x < 1).
+\end{aligned}
 ```
 
 **逆正接.** $`y = \arctan x`$ は $`x = \tan y`$ を意味します。$`\tan' = \sec^2 = 1 +

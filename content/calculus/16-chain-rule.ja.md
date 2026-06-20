@@ -58,7 +58,10 @@ f(b + k) - f(b) = \varphi(k)\,k.
 ```
 ここで $`k = g(a+h) - g(a)`$ とおくと $`b + k = g(a+h)`$。この恒等式を $`h`$ で割ると、
 ```math
-\frac{f(g(a+h)) - f(g(a))}{h} = \varphi\big(g(a+h) - g(a)\big)\cdot\frac{g(a+h) - g(a)}{h}.
+\begin{aligned}
+\frac{f(g(a+h)) - f(g(a))}{h}
+&= \varphi\big(g(a+h) - g(a)\big)\cdot\frac{g(a+h) - g(a)}{h}.
+\end{aligned}
 ```
 $`h \to 0`$ とします。$`g`$ は微分可能なので
 [連続](./12-derivative-definition.ja.md)であり、$`g(a+h) - g(a) \to 0`$。すると

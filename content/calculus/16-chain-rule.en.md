@@ -61,7 +61,10 @@ f(b + k) - f(b) = \varphi(k)\,k.
 Now set $`k = g(a+h) - g(a)`$, so $`b + k = g(a+h)`$. Dividing the displayed identity
 by $`h`$,
 ```math
-\frac{f(g(a+h)) - f(g(a))}{h} = \varphi\big(g(a+h) - g(a)\big)\cdot\frac{g(a+h) - g(a)}{h}.
+\begin{aligned}
+\frac{f(g(a+h)) - f(g(a))}{h}
+&= \varphi\big(g(a+h) - g(a)\big)\cdot\frac{g(a+h) - g(a)}{h}.
+\end{aligned}
 ```
 Let $`h \to 0`$. Since $`g`$ is differentiable, it is
 [continuous](./12-derivative-definition.en.md), so $`g(a+h) - g(a) \to 0`$; then

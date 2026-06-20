@@ -24,7 +24,11 @@ $`\tfrac{\ln(1+t)}{t} \to 1`$, or the geometric limit $`\tfrac{\sin x}{x} \to 1`
 *Proof.* Factor $`e^x`$ out of the difference quotient and use the functional
 equation $`e^{x+h} = e^x e^h`$:
 ```math
-\frac{e^{x+h} - e^{x}}{h} = e^{x}\,\frac{e^{h} - 1}{h} \xrightarrow{\ h \to 0\ } e^{x}\cdot 1 = e^{x},
+\begin{aligned}
+\frac{e^{x+h} - e^{x}}{h}
+&= e^{x}\,\frac{e^{h} - 1}{h}
+\xrightarrow{\ h \to 0\ } e^{x}\cdot 1 = e^{x},
+\end{aligned}
 ```
 by the [exponential limit](./14-exponential-and-logarithm.en.md). $`\blacksquare`$
 
@@ -65,8 +69,12 @@ in $`x`$, so both sides agree):
 
 *The second limit* follows by rationalizing:
 ```math
-\frac{1 - \cos x}{x} = \frac{1 - \cos^2 x}{x\,(1 + \cos x)} = \frac{\sin x}{x}\cdot\frac{\sin x}{1 + \cos x}
+\begin{aligned}
+\frac{1 - \cos x}{x}
+&= \frac{1 - \cos^2 x}{x\,(1 + \cos x)} \\
+&= \frac{\sin x}{x}\cdot\frac{\sin x}{1 + \cos x}
 \to 1 \cdot \frac{0}{2} = 0.
+\end{aligned}
 ```
 
 ## Sine and cosine

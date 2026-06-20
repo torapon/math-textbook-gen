@@ -29,8 +29,10 @@ suffices to show $`(a_n)`$ is **increasing** and **bounded above**. Expand with 
 binomial theorem:
 ```math
 a_n = \left(1 + \frac1n\right)^n
-= \sum_{k=0}^{n} \frac{1}{k!}\,\underbrace{\Big(1 - \tfrac1n\Big)\Big(1 - \tfrac2n\Big)\cdots\Big(1 - \tfrac{k-1}{n}\Big)}_{k\text{ factors, each in }(0,1]}.
+= \sum_{k=0}^{n} \frac{1}{k!}\prod_{j=0}^{k-1}\Big(1 - \frac{j}{n}\Big).
 ```
+Each of the $`k`$ factors $`1 - j/n`$ lies in $`(0, 1]`$, which drives both facts we
+need:
 
 - **Increasing.** Passing from $`n`$ to $`n+1`$, every factor $`\big(1 - \tfrac{j}{n}\big)`$
   grows to $`\big(1 - \tfrac{j}{n+1}\big)`$, and an extra positive term is added. So
